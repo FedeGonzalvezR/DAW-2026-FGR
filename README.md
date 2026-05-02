@@ -10,3 +10,5 @@
 ## *Descripción:* 
 
 Este README tiene como objetivo poner en practica el uso de Git y GitHub para la asignatura de Desarrollo y Arquitectura Web de la carrera Ingenieria en sistemas informaticos de la UAI. Saludos :D
+
+URL Noticia de la actividad: https://www.lanacion.com.ar/deportes/basquetbol/asi-quedaron-los-cruces-de-los-playoffs-y-los-play-in-de-la-nba-quienes-se-clasificaron-en-la-nid13042026/
