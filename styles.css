@@ -2,30 +2,87 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:  Georgia, serif;
 }
 
 body {
     
-    background-color: rgb(212, 211, 211);
+    background-color: rgb(236, 235, 235);
+    line-height: 1.875rem;
+    
+}
+
+.contenedor{
+    width: 100%;
+    padding: 1rem;
+
 }
 
 fieldset {
     background-color: rgb(141, 140, 140);
+    padding: 1rem;
+    margin-bottom: 1rem;
 }
 
 nav {
     display: flex;
-    background-color: rgb(107, 106, 106);
+    background-color: white;
     justify-content: center;
+    padding: 10px;
 }
+
+img{
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
 
 footer{
     display: flex;
     justify-content: center;
     text-align: center;
+    padding: 2rem 0;
 }
 
 #textoSuscripcion {
     font-weight: bold
 }
+
+/* Breakpoint para TABLETS  */
+@media (min-width: 768px) {
+    .contenedor{
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    body{
+        line-height: 2rem;
+    }
+
+    img{
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+}
+
+/* Breakpoint para DESKTOP */
+@media (min-width: 1024px) {
+    .contenedor{
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 50px;
+        
+    }
+
+    img{
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    
+    h1{
+        font-size: 2.5rem;
+    }
+}
+
