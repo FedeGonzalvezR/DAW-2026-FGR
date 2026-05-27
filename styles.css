@@ -27,15 +27,33 @@ fieldset {
 nav {
     display: flex;
     background-color: white;
-    justify-content: center;
-    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+#logo {
+    max-width: 150px;
+    margin: 0;
+}
+
+#menu-hamburguesa {
+    width: 30px;
+    height: 30px;
+    display: block;
+    margin: 0;
+}
+
+#botones-menu {
+    display: none; 
+
 }
 
 img{
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-    }
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
 
 footer{
     display: flex;
@@ -47,6 +65,29 @@ footer{
 #textoSuscripcion {
     font-weight: bold
 }
+
+.noticias-secundarias {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.noticias-secundarias h3 {
+    color: #1d428a;
+    margin-bottom: 5px;
+}
+
+
+.tarjeta-secundaria h4 a {
+    color: #333; 
+    font-weight: bold;
+}
+
+.tarjeta-secundaria p {
+    font-size: 0.95rem; 
+    color: #555;
+}
+
 
 /* Breakpoint para TABLETS  */
 @media (min-width: 768px) {
@@ -84,5 +125,19 @@ footer{
     h1{
         font-size: 2.5rem;
     }
+
+    #logo {
+        max-width: 250px;
+    }
+
+    #menu-hamburguesa {
+        display: none;
+    }
+
+    #botones-menu {
+        display: flex; 
+        gap: 20px;     
+    }
+
 }
 
