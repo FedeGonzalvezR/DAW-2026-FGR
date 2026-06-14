@@ -88,6 +88,110 @@ footer{
     color: #555;
 }
 
+#titulo-saludo {
+    text-align: center;
+    color: #1d428a;
+    font-size: 2.5rem;
+    margin-top: 10px;
+}
+
+#subtitulo-formulario {
+    text-align: center;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+
+#form-suscripcion {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+.grupo-control {
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+}
+
+.grupo-control label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.grupo-control input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: sans-serif;
+}
+
+.error-msj {
+    color: #cc0000; 
+    font-size: 0.85rem;
+    font-weight: bold;
+    margin-top: 4px;
+    min-height: 1.2rem; 
+}
+
+.contenedor-boton {
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    margin-top: 15px;
+}
+
+#btn-enviar {
+    background-color: #1d428a;
+    color: white;
+    padding: 12px 40px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%; 
+}
+
+#btn-enviar:hover {
+    background-color: #122a58; 
+}
+
+.seccion-llamado-suscripcion {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+    margin: 20px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+#textoSuscripcion {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.btn-ir-suscripcion {
+    display: inline-block; 
+    background-color: #1d428a;
+    color: white;
+    text-decoration: none; 
+    padding: 12px 30px;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+/* Efecto Hover */
+.btn-ir-suscripcion:hover {
+    background-color: #122a58;
+}
+
 
 /* Breakpoint para TABLETS  */
 @media (min-width: 768px) {
@@ -137,6 +241,28 @@ footer{
     #botones-menu {
         display: flex; 
         gap: 20px;     
+    }
+
+    #form-suscripcion {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .grupo-control {
+        width: 48%;
+    }
+
+    .contenedor-boton {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    #btn-enviar {
+        width: auto;
     }
 
 }
