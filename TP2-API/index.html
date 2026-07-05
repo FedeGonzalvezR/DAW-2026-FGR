@@ -3,67 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rick & Morty API - TP Clase 11</title>
+    <title>Rick & Morty API - TP2</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <h1>Rick & Morty Character Finder</h1>
+
+        <h1>Rick & Morty API - TP2</h1>
+
     </header>
 
-    <main>
-        <section class="controls-section">
-            <button id="btn-all" class="btn-primary">Obtener Todos los Personajes</button>
-            
-            <div class="divider">ó filtrar por:</div>
+    <button id="btnFetch">Mostrar todos los personajes</button>
 
-            <form id="filter-form" class="filter-form">
-                <div class="form-group">
-                    <label for="name">Nombre:</label>
-                    <input type="text" id="name" name="name" placeholder="Ej: Rick">
-                </div>
+    <form id="formFiltros">
 
-                <div class="form-group">
-                    <label for="status">Estado:</label>
-                    <select id="status" name="status">
-                        <option value="">Cualquiera</option>
-                        <option value="alive">Vivo (Alive)</option>
-                        <option value="dead">Muerto (Dead)</option>
-                        <option value="unknown">Desconocido (Unknown)</option>
-                    </select>
-                </div>
+        <div>
+            <label for="inputNombre">Nombre:</label>
+            <input type="text" id="inputNombre" placeholder="Ingrese un nombre">
+        </div>
 
-                <div class="form-group">
-                    <label for="species">Especie:</label>
-                    <input type="text" id="species" name="species" placeholder="Ej: Human">
-                </div>
+        <div>
+            <label for="selectEstado">Estado:</label>
+            <select id="selectEstado">
+                <option value="">Todos</option>
+                <option value="Alive">Alive</option>
+                <option value="Dead">Dead</option>
+                <option value="unknown">Desconocido</option>
+            </select>
+        </div>
 
-                <div class="form-group">
-                    <label for="type">Tipo:</label>
-                    <input type="text" id="type" name="type" placeholder="Ej: Super Mutant">
-                </div>
+        <div>
+            <label for="inputEspecie">Especie:</label>
+            <input type="text" id="inputEspecie" placeholder="Ej: Human, Alien">
+        </div>
 
-                <div class="form-group">
-                    <label for="gender">Género:</label>
-                    <select id="gender" name="gender">
-                        <option value="">Cualquiera</option>
-                        <option value="female">Femenino</option>
-                        <option value="male">Masculino</option>
-                        <option value="genderless">Sin Género</option>
-                        <option value="unknown">Desconocido</option>
-                    </select>
-                </div>
+        <div>
+            <label for="inputTipo">Tipo:</label>
+            <input type="text" id="inputTipo" placeholder="Ej: Super Mutant">
+        </div>
 
-                <button type="submit" class="btn-submit">Aplicar Filtros</button>
-            </form>
-        </section>
+        <div>
+            <label for="selectGenero">Género:</label>
+            <select id="selectGenero">
+                <option value="">Todos</option>
+                <option value="male">Hombre</option>
+                <option value="female">Mujer</option>
+                <option value="genderless">Sin Género</option>
+                <option value="unknown">Desconocido</option>
+            </select>
+        </div>
 
-        <section id="error-container" class="error-container hidden"></section>
-        
-        <section id="results-container" class="results-grid">
-            </section>
-    </main>
+        <button type="submit" id="btnFiltrar">Aplicar Filtros</button>
+
+    </form>
+
+
+
+    <p id = "estado"></p>
+    <ul id = "personajes"></ul>
+
+    <div class="paginacion">
+        <button id="btnAnterior">Anterior</button>
+        <button id="btnSiguiente">Siguiente</button>
+    </div>
 
     <script src="script.js"></script>
 </body>
